@@ -142,3 +142,13 @@ def grid_convergence_index(
     print(f"gci21_fine = {gci21_fine}")
 
     return
+
+
+if __name__ == '__main__':
+    # test values provided in the paper
+    grid_convergence_index([18_000, 8_000, 4_500], [6.063, 5.972, 5.863])
+    print("")
+    grid_convergence_index([18_000, 4_500, 980], [10.788, 10.725, 10.605])
+    print("")
+    grid_convergence_index([18_000, 4_500, 980], [6.0042, 5.9624, 6.0909])
+    
